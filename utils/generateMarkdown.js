@@ -20,7 +20,7 @@ const writeFile = fileContent => {
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== 'none') {
+  if (license !== false) {
     return `
     ![badge](https://img.shields.io/badge/License-${license}-yellow.svg)
     `;
@@ -33,10 +33,11 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== 'none') {
+  if (license !== false) {
     return `
     [${license}](https://choosealicense.com/licenses/${license})
     `;
+
   } else {
     return " ";
   }
@@ -47,10 +48,11 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== 'none') {
-    return `
-    ## [License](#table-of-contents)
-    ${renderLicenseLink(license)}
+  if (license !== false) {
+    return
+     `
+    # [License](#table-of-contents)
+    
     `;
   } else {
     return " ";
@@ -63,7 +65,9 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `
   # ${data.title} 
-  ${renderLicenseBadge(data.license)}
+  
+  [![badge](https://img.shields.io/badge/License-${data.license}-yellow.svg)]((https://opensource.org/licenses/${data.license}))
+  
   ## Description
   ${data.description}
   \n[Deployed application](${data.link})
@@ -72,7 +76,7 @@ function generateMarkdown(data) {
 
   * [Installation](#Installation)
   * [Usage](#usage)
-  ${renderLicenseSection(data.license)}
+  * [License](#license)
   * [Contributions](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -84,7 +88,11 @@ function generateMarkdown(data) {
  
   ## Usage
   ${data.usage}
-  \n![visuals](${data.visual})
+  
+  \n ![visuals](${data.visual})
+
+  ## License
+  This project operates under the [${data.license}](https://choosealicense.com/licenses/${data.license}/) license.
 
   ## Contributing
   ${data.contributors}
@@ -93,8 +101,9 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  If you have any questions about the repo, open and issue or contact me directly at <mailto:${data.email}>.
-  \nYou can find more of my work at [JessVarghese](https://github.com/${data.github}).
+  If you have any questions about the repo, open and issue or contact me directly:
+  * Email: ${data.email}
+  * Github: https://github.com/${data.github}
 
 `;
 }

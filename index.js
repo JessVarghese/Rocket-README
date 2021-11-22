@@ -144,10 +144,11 @@ const questions = [
       }
     },
 {
-  type: 'checkbox',
-  name: 'license',
+  type: 'list',
   message: 'What kind of license should your project have?',
-  choices: ['MIT', 'APACHE', 'GPL', 'BSD', 'none']
+  name: 'license',
+  choices: ['MIT', 'APACHE', 'GPL', 'BSD', 'no-license'],
+  
 },
 
 ]
@@ -159,7 +160,7 @@ const questions = [
 // // TODO: Create a function to write README file
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./dist/README.MD', fileContent, err => {
+    fs.writeFile('./dist/generated-README.MD', fileContent, err => {
       if (err) {
         reject(err);
 
