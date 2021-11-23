@@ -1,12 +1,12 @@
 
-  # s 
+  # Professional README Generator 
   
-  ![badge](https://img.shields.io/badge/License-GPL-yellow.svg(https://opensource.org/licenses/GPL))
+  [![badge](https://img.shields.io/badge/License-MIT-yellow.svg)]((https://opensource.org/licenses/MIT))
   
   ## Description
-  s
+  The Professional README Generator uses that command line to generate a README file. The user will be promoted with a series of questions that will generate a README file a user can use for their next project.
   
-[Deployed application](s)
+[Deployed application](https://github.com/JessVarghese/Professiona_README_Generator)
 
   ## Table of Contents
 
@@ -20,25 +20,25 @@
 
   ## Installation
   
-  s
+  npm install inquirer
  
   ## Usage
-  s
+  git clone git@github.com:JessVarghese/Professional_README_Generator.git
   
   
- ![visuals](undefined)
+ ![visuals](./../images/prof_readme_code.png)
 
   ## License
-  This project operates under the [GPL](https://choosealicense.com/licenses/GPL/) license.
+  This project operates under the [MIT](https://choosealicense.com/licenses/MIT/) license.
 
   ## Contributing
-  s
+  Open to suggestions on new features
 
   ## Tests
-  s
+   Testing is done within the project
 
   ## Questions
   If you have any questions about the repo, open and issue or contact me directly:
-  * Email: s
-  * Github: https://github.com/s
+  * Email: spudred@aol.com
+  * Github: https://github.com/JessVarghese
 
