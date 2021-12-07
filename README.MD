@@ -1,10 +1,10 @@
 
-  # Professional README Generator 
+  # Rocket README 
   
   [![badge](https://img.shields.io/badge/License-MIT-yellow.svg)]((https://opensource.org/licenses/MIT))
   
   ## Description
-  The Professional README Generator uses that command line to generate a README file. The user will be promoted with a series of questions that will generate a README file a user can use for their next project.
+  The Rocket README uses that command line to generate a README file. The user will be promoted with a series of questions that will generate a README file a user can use for their next project.
   
 [Deployed application](https://github.com/JessVarghese/Professiona_README_Generator)
 
@@ -23,7 +23,7 @@
   * npm install inquirer
  
   ## Usage
-  ![DEMO](./demo/Professional_README_Generator_Challenge.gif)
+  [VIDEO](https://watch.screencastify.com/v/2CdCxwm2BUoZZBHA7tgV)
   
   ![visuals](./images/prof_readme_code.png)
 
