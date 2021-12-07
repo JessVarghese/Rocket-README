@@ -23,7 +23,7 @@
   * npm install inquirer
  
   ## Usage
-  [VIDEO](https://watch.screencastify.com/v/2CdCxwm2BUoZZBHA7tgV)
+  [VIDEO WALKTHROUGH](https://watch.screencastify.com/v/2CdCxwm2BUoZZBHA7tgV)
   
   ![visuals](./images/prof_readme_code.png)
 
